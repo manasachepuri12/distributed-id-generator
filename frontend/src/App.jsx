@@ -14,7 +14,7 @@ const [error, setError] = useState("");
    const API_BASE_URL = import.meta.env.VITE_API_URL || "";
 
 const response = await fetch(
-  `${API_BASE_URL}/api/id`
+    `${API_BASE_URL}/api/id`
 );
     if (!response.ok) {
       throw new Error("Failed to generate ID");
